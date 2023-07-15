@@ -3,3 +3,4 @@
 
   const {first, ...rest} = value
   console.log(rest);
+  // destructuring
