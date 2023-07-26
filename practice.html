@@ -1,19 +1,20 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
- </head>
- <body>
-   <script>
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
       // fetch('https://fakestoreapi.com/products')
       // .then((data)=>{
       //    return data.json();
       //    }).then(function (response) {
       //       console.log("Data: ", response);
       // })
-
 
       // let x = true;
       // let y = "true";
@@ -22,41 +23,76 @@
       // if(!x === y){
       //   console.log("hey")
       // } else if(x == y || !y == !z){
-      //   console.log("how r u") 
+      //   console.log("how r u")
       // }else if(!y === z){
       //   console.log("vikas")
       // }else{
       //   console.log("tomar")
       // }
 
-let x = true;
-let y = "true";
+      // let x = true;
+      // let y = "true";
 
-if(x != y) {
-  console.log("hello");
-}
-else{
-  console.log("Working in else")
-}
-
-
-
-
-
-
+      // if(x != y) {
+      //   console.log("hello");
+      // }
+      // else{
+      //   console.log("Working in else")
+      // }
 
       //A.  hey
       //B. how r u
       //C. vikas
       //D. tomar
 
-
       // fetch('https://fakestoreapi.com/products')
       // .then((data)=>{
       //    return data.json()
       // })
       // .then((res)=>console.log(res))
-   </script>
-   
- </body>
- </html>  
+
+      // let a = [2, 3, 4, 8, 2, 1];
+      // b = a.splice(3, 1);
+      // console.log(b);
+
+      // Favroutive questions
+      // const num = [3,4,2,56,22,3]
+      // let sum = '';
+
+      // function check(num){
+      //   for (let i=0 ;i< num.length;i++){
+      //     if(num[i] %2 ==0)
+      //     {
+      //    return  sum += num[i]
+      //     }
+
+      // }
+
+      // check(num)
+
+      // // check(num)
+      // console.log(sum);
+
+      let num = [2, 3, 4, 5, 6];
+      let postive = "";
+
+      function check(num) {
+        for (let i = 0; i < num.length; i++)
+          if (num[i] % 2 == 0) {
+            return (postive += num[i]);
+          }
+      }
+      check(num);
+      console.log(postive);
+
+      // let num = 11;
+
+      // if(num % 2 == 0){
+      //   console.log("postive")
+      // }
+      // else{
+      //   console.log("negative");
+      // }
+    </script>
+  </body>
+</html>
