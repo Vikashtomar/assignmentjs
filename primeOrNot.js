@@ -13,4 +13,7 @@ function primeornot(num){
     }
     return true
 }
-console.log(primeornot(17));
+// console.log(primeornot(17));
+// console.time('Execution time'); // Start timer
+
+console.log(` ${primeornot(11)} is prime`);
