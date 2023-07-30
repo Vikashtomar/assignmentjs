@@ -45,6 +45,7 @@
 // console.log(a.trimEnd());
 
 
-let a = "hello world how are you";
- let b = a.slice(5,11);
- console.log(b)
+// let a = "hello world how are you";
+//  let b = a.slice(5,11);
+//  console.log(b)
+
