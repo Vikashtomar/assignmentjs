@@ -74,9 +74,9 @@
 // }
 // checkNum(17)
 
-let person = [{  id:1,uname: "gayu",lname:"chauhan",age:29,occupation:"HF"},
-{id:2, uname:"mithhu",lname:"singh",age:31,occupation:"teacher"},
-{id:3, uname:"VIKASH",lname:"Tomar",age:21,occupation:"student", hobby:"basketball"}];
+// let person = [{  id:1,uname: "gayu",lname:"chauhan",age:29,occupation:"HF"},
+// {id:2, uname:"mithhu",lname:"singh",age:31,occupation:"teacher"},
+// {id:3, uname:"VIKASH",lname:"Tomar",age:21,occupation:"student", hobby:"basketball"}];
 
 // let result = person.map((val)=>{
 //   const {lname,age} = val;
@@ -85,11 +85,49 @@ let person = [{  id:1,uname: "gayu",lname:"chauhan",age:29,occupation:"HF"},
 //   )
 // });
 
-let result  = person.map((val)=>{
-  const {lname,age} = val;
-return(
-  {lname,age}
+// let result  = person.map((val)=>{
+//   const {lname,age} = val;
+// return(
+//   {lname,age}
 
-)
-})
-console.log(result);
+// )
+// })
+// console.log(result);
+
+
+
+
+
+
+  // Filter method
+
+  
+  
+
+//   let arr =  [12,7,18,39,24,27,88,82];
+
+//  const filtering = arr.filter((a)=>{
+//  return a < 50;
+
+//  })
+
+//  console.log(filtering)
+
+
+
+// Map method 
+
+
+const  arr = [12,18,6,4];
+
+function double(n){
+  return n*2
+
+}
+
+// console.log(double(arr))
+
+
+
+   console.log(arr.map(double))
+
