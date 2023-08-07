@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVSCRIPT4</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 250px;
+            background-color:#50ff47;
+            margin: auto;
+        }
+        button{
+            width: 100px;
+            height: 60px;
+            border-radius: 3px;
+            /* margin: auto; */
+            margin-left: 40px;
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+
+        <button>Chnage</button>
+    </div>
+    <script>
+        var box = document.getElementById("box");
+        let btn = document.querySelector("button")
+        btn.onclick = function (){
+            box.style.backgroundColor = "red"
+
+        }
+    </script>
+    
+</body>
+</html>

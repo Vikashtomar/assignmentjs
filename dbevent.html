@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBCLICK</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            background-color: green;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+        <button onclick="tan()">Single Click</button>
+        <button ondblclick="blue()"> DB Click</button>
+
+    </div>
+
+
+    <script>
+        let box = document.querySelector("#box")
+        function tan()
+        {
+            box.style.backgroundColor = "tan"
+        }
+        function blue(){
+            box.style.backgroundColor ="blue";
+        }
+
+    </script>
+    
+</body>
+</html>

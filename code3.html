@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        #box{
+            width: 35%;
+            height: auto;
+            margin: auto;
+            background-color: tan;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        p{
+            /* text-align: center; */
+            width: 30%;
+           min-height: 300px !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, delectus.</p>
+        <button onclick="hide()">Remove</button>
+        <br>
+        <button onclick="show()">Show</button>
+    </div>
+
+    <script>
+        let box = document.querySelector("#box");
+        let para = document.querySelector("p")
+        
+        function hide(){
+            // box.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, delectus"
+            // box.style.height = "300px"
+            // box.style.button = "postion:fixed"
+            para.innerHTML = " "
+
+            console.log("remove")
+        }
+        function  show()
+        {
+            // box.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, delectus ";
+            // box.style.height = "300px";
+            para.innerHTML = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, delectu"
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
