@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce It</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      #strings {
+        width: 250px;
+        height: 30px;
+        margin-right: 10px;
+        padding: 5px;
+      }
+
+      #analyzeBtn {
+        padding: 5px 10px;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="stringForm">
+      <input
+        type="text"
+        id="strings"
+        placeholder="Enter comma-separated strings..." />
+      <button type="submit" id="analyzeBtn">Analyze</button>
+    </form>
+    <p id="result"></p>
+    <script>
+      // javascript code goes here
+      let btn = document.querySelector("button");
+      let input = document.getElementById("strings");
+      
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const store = input.value.split(",");
+
+        const output = store.reduce((prev, curr) => {
+          return prev.length > curr.length
+            ? prev
+            : prev.length === curr.length
+            ? prev
+            : curr;
+        }, store[0]);
+        document.querySelector("#result").innerHTML =
+          "The longest string is: " + output;
+        // console.log("Clicked");
+      });
+    </script>
+  </body>
+</html>

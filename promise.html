@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Promise API 
+        // --> when we fulfill all the  promise then we will run a peace of code.
+        
+
+        // methods of promise
+
+        // -> Promise.all 
+        // -> it will return a new promise then we new promise resolve when all listed promise are 
+        // resolved are resolved and it will give result in form of array.
+
+
+        let p1 = new Promise((resolve,reject)=>
+        {
+            setTimeout(()=>{
+                resolve("First Value")
+            },1000)
+        })
+
+        let p2 = new Promise((resolve,reject)=>
+        {
+            setTimeout(()=>{
+                resolve("second Value")
+            },2000)
+        })
+
+        let p3 = new Promise((resolve,reject)=>
+        {
+            setTimeout(()=>{
+                reject("Third Value")
+            },3000)
+        })
+
+
+        // p1.then((value)=>{
+        //     console.log(value)
+        // })
+
+        // let pro_all = Promise.all([p1,p2,p3]);
+
+        // pro_all.then((value)=>{
+        //     console.log(value)
+        // })
+        
+        let allpromise = Promise.allSettled([p1,p2,p3])
+        allpromise.then((value)=>{
+            console.log(value)
+        })
+
+
+
+
+        //--> In Promise all method if one promise is rejected then other promise will not work and it will show an error
+
+        //---------------------------------------------------
+        // 2-> All settled 
+        // -> Promise allsettled
+        // -> In promise allsettled if one promise is reject then it will not shown an error the other promise 
+        // will work as usually.
+
+    </script>
+</body>
+</html>

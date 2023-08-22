@@ -12,7 +12,8 @@ let arr = [
       let newline = []
       for(let j = arr.length-1;  j>=0; j--)
       {
-          newline.push(arr[j][i])
+          newline.push(arr[i][j])
+        //   newline.push(arr[2][0])
       }
   result.push(newline)
   }

@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+ </head>
+ <body>
+   <div id="wrapper">
+hello
+   </div>
+
+
+   <script>
+      fetch("https://fakestoreapi.com/products/")
+      .then((res)=> {
+         return res.json()
+      })
+      .then((data)=>{
+         console.log(data)
+      })
+
+     function show(data){
+       document.getElementById("wrapper").innerHTML = data.title;
+    
+     }
+    show();
+
+   
+    
+     
+     
+   </script>
+   
+ </body>
+ </html>

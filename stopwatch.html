@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div>
+        <h1><span>00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></h1>
+    </div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="restart">Restart</button>
+
+    <script>
+ let start = document.querySelector("#start");
+ let stop = document.querySelector("#stop");
+ const restart = document.querySelector("#restart")
+
+ const spans = document.querySelectorAll("span");
+
+
+ let hour = 0
+
+        start.addEventListener("click",()=>{
+            setInterval(() => {
+                spans[0].innerHTML = hour+1
+            }, 1000);
+                
+            
+        })
+ 
+    </script>
+
+</body>
+
+</html>
+

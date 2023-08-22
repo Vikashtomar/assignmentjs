@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <input type="email" placeholder="enter email" >
+    
+    <button onclick="add()"> get domain</button>
+
+    <script>
+        let p = document.querySelector("p");
+        let inp = document.querySelector("input");
+
+      function add(){
+            
+        let pradeep = inp.value.split("@")[1]
+
+        p.innerHTML= pradeep.split(".")[0]
+
+        console.log("hello")
+        console.log(pradeep)
+      }
+       
+
+        
+       
+    </script>
+</body>
+</html>
