@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// A special syntax to work with promise in a more easier format in called async await.
+
+// syntax:  async function fun()
+// {
+//     return 100;
+
+// }
+
+// -> here async measns simple thing a function will alwasys return a promise
+// The await keyword makes the function pause the execution and wait for  a resolved promise before it continues
+
+// -> async function always return a promise other  values are wrapped in a promise automatically.
+
+// async function hello()
+// {
+//     return 100;
+// }
+// hello().then(alert)
+
+
+ 
+
+    
+     async function prom()
+     {
+
+        let p1 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("First value")
+            },1000)
+        })
+        
+        let p2 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Second value")
+            },2000)
+        })
+    //     p1.then(alert);
+    //  p2.then(alert);
+
+    let first = await p1;
+    let second = await p2;
+    console.log([first,second])
+
+    }
+     prom()
+
+     // The keyword await makes javascript wait until that promise settles and  return its result.
+
+     // it will prevent from the then()  values method because  it store in a variable 
+
+     // -> The await keyword can only be used inside an async function.
+
+     // The await keyword makes the function pause the execution and wait for a 
+     // resloved promise before it continues :
+
+
+
+
+    </script>
+</body>
+</html>
