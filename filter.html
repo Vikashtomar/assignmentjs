@@ -25,8 +25,47 @@
             
       //    })
       //   console.log(result)
-   
+
+      // let names = ["vikash","ram","raghuvanshi","raghav","jay"];
+
+      // let output = names.filter((n)=> n.length < 5);
+      // console.log(output)
+
+      // let nums = [18,12,34,13,8,7,5]
+      // let output = nums.filter((n)=>{
+      //   return  n%2 != 0;
+      // })
+
+
+  //      let user = [
+  //       {unmae: "rahul",age: 20},
+  //       {unmae: "manish",age: 22},
+  //       {unmae: "aksh",age: 30},
+  //       {unmae: "rahul tom",age: 32},
+
+  //      ]
+  // let output = user.filter((n)=>{
+  //   return n.age > 30
+  // })
+  // console.log(output)
+
+
+  // reverse a number using any loop
+    function reversekaro(num)
+    {
+      let rev = 0;
+      while(num > 0)
+      {
+      let rem = num%10;
+      rev = rev*10+rem;
+      num = Math.floor(num/10)
+        
+      }
+      return rev
+
+    }
   
+    console.log(reversekaro(12345))
     </script>
     
  </body>

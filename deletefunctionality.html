@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h5>Get Object Values</h5>
+    <h3></h3>
+    <!-- <ul>
+        <li>
+
+        </li>
+    </ul> -->
+
+    <script>
+        // let inp = document.querySelector("input");
+        // let h3 = document.querySelector("h3");
+        // let btn = document.querySelector("button");
+        // let li = document.querySelector("li")
+
+        // btn.addEventListener("click",(e)=>{
+        //     e.preventDefault()
+        //     h3.innerHTML = inp.value
+            
+        // })
+
+        let h3 = document.querySelector("h3");
+        console.log(h3)
+
+        const questions = [
+  {
+    question: "2+2",
+    answer: 4,
+    options: [1, 2, 4, 5],
+  },
+  {
+    question: "2+2+2",
+    answer: 6,
+    options: [2, 8, 6, 4],
+  },
+  {
+    question: "2+2-2",
+    answer: 4,
+    options: [0, 2, 1, 4],
+  },
+  {
+    question: "2+2+4",
+    answer: 8,
+    options: [8, 0, 4, 22],
+  },
+  {
+    question: "2+2-4",
+    answer: 0,
+    options: [2, 4, 0, 22],
+  },
+];
+let i=0;
+
+ 
+for( i=0; i<questions.length; i++)
+
+{  
+     function getvalues(){
+      for(let k in questions[i])
+    {
+        h3.innerHTML += `${k} : ${questions[i][k]} +"<br>`;
+    }
+
+
+     }
+     getvalues()
+    
+}
+
+ 
+
+        
+    </script>
+</body>
+</html>

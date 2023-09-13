@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p></p>
+</body>
+<script>
+    let para = document.querySelector("p")
+    console.log(para)
+    let arr = [
+        {
+            id: 1,
+            saler: "30k",
+            uname: "xyz"
+
+        },
+        {
+            id: 2,
+            saler: "30k",
+            uname: "abc"
+
+        }
+
+    ]
+    let a =0;
+    for( a=0; a<arr.length; a++)
+    {
+        for(let i in arr[a])
+    {
+        para.innerHTML += `  ${i} :  ${arr[a][i]}` + "</br>";
+    }
+    }
+   
+</script>
+</html>

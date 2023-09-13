@@ -8,15 +8,19 @@
     <title>Document</title>
   </head>
   <body>
-    <h1></h1>
+    <h1>Good Morning Vikas 😊</h1>
+    <h6>Random quote wala banana ha</h6>
+    <p>
+
+    </p>
     <script>
       // let h1 = document.querySelector("h1");
 
-      let obj = {
-          uname:"vikas",
-          age:21,
-          email:"vikas@gmail.com"
-      }
+      // let obj = {
+      //     uname:"vikas",
+      //     age:21,
+      //     email:"vikas@gmail.com"
+      // }
 
       // document.write({obj})
       // console.log(obj)
@@ -129,6 +133,42 @@
 // } -->
 
 
+const questions = [
+  {
+    question: "2+2",
+    answer: 4,
+    options: [1, 2, 4, 5],
+  },
+  {
+    question: "2+2+2",
+    answer: 6,
+    options: [2, 8, 6, 4],
+  },
+  {
+    question: "2+2-2",
+    answer: 4,
+    options: [0, 2, 1, 4],
+  },
+  {
+    question: "2+2+4",
+    answer: 8,
+    options: [8, 0, 4, 22],
+  },
+  {
+    question: "2+2-4",
+    answer: 0,
+    options: [2, 4, 0, 22],
+  },
+];
+
+let p = document.getElementsByTagName("p")
+console.log(p)
+setInterval(()=>{
+  for(let i in questions.length)
+  {
+      p.innerHTML += questions[i];
+  }
+},1000)
 
     </script>
   </body>
