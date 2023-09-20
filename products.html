@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="heading"></h3>
+    <img src="" alt="loading" width="200px" height="150px"  id="myimg"/>
+    <button id="btn"  onclick="myapi()">Next product</button>
+    <script>
+        // let head = document.getElementById("heading");
+        // const imgsrc = document.getElementById("myimg");
+        // const btn = document.querySelector("btn")
+        
+        // function myapi()
+        // {
+        //   fetch("https://fakestoreapi.com/products/1")
+        //   .then((res)=>res.json())
+        //   .then((data)=>{
+        //     console.log(data)
+        //     head.innerHTML  = data.title;
+        //     imgsrc.src = data.image
+        //     let a = [...data.image];
+        //     imgsrc.src = a
+        //   })
+        // }
+
+        fetch('https://randomuser.me/')
+            .then(res=>res.json())
+            .then(json=>console.log(json))
+    
+        
+    </script>
+</body>
+</html>
