@@ -15,3 +15,5 @@ let counter = document.getElementById("counter");
          counter.innerHTML = c;
             
         }
+
+        console.log("hello");
