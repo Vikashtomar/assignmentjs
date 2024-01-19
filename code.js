@@ -13,6 +13,6 @@ function remove()
 function show()
 {
     h1.innerHTML = "this is a heading"
-    para.innerHTML = "Lorem ipsum dolor sit amet consectetur  adipisicing elit. Id, ea eius aliquid similique fuga exercitationem placeat, voluptatibus quae porro mollitia quam quidem, quasi voluptas error? Culpa exercitationem non numquam modi"
+    para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ea eius aliquid similique fuga exercitationem placeat, voluptatibus quae porro mollitia quam quidem, quasi voluptas error? Culpa exercitationem non numquam modi"
     para.style.height = "200px"
 }
